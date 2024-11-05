@@ -101,7 +101,8 @@ src="https://www.facebook.com/tr?id=8365497216909950&ev=PageView&noscript=1"
             <p class="texto">Solicita tu usuario gratuito. Todas las promos disponibles.</p>
         </div>
         <br> <!-- Espacio entre el texto y el botón -->
-        <a href="https://wa.me/543854864386" class="boton-whatsapp">QUIERO UN USUARIO</a>
+         <a id="whatsapp-button" href="https://wa.me/543854864386" class="boton-whatsapp">QUIERO UN USUARIO</a>
+    <script>        document.getElementById('whatsapp-button').addEventListener('click', function() {            fbq('track', 'Contactar'); // Cambia 'Lead' por el evento que desees rastrear        });    </script>
     </div>
 </body>
 </html>
